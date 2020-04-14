@@ -32,16 +32,17 @@
   list-style: none;
 }
 .menu li a{
+  background-color: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   text-decoration: none;
   text-transform: uppercase;
   display:block;
 }
 .menu li:hover{
-  background: #dc3545
+  background: #C0C0C0
 }
 .menu li a:hover{
-  color: #fff
+  color: #C0C0C0
 }
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo  {

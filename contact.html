@@ -3,6 +3,7 @@
   <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="newyorksky.css">
+    <link rel="stylesheet" href="contactstyle.css"
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +23,6 @@
     <div class="navbar_links">
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
         <li><a href="https://github.com/ryan-machio">Projects</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -34,27 +34,30 @@
   <video autoplay muted loop id="myVideo" onclick="this.paused ? this.play() : this.pause();">
     <source src="New-York-Sky.mp4" type="video/mp4">
   </video>
-
-  <!-- Optional: some overlay text to describe the video -->
-  <div class="content">
-    <h1>Welcome,</h1>
-    <p>to my software development journey.</p>
-  </div>
-
-
     <body>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
+        <div class="container">
+            <form action="action_page.php">
+                
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
           </div>
-          <div class="col-sm-6">
-          </div>
-          <div class="col-sm-1">
-            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ryan-manch"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-manch?trk=profile-badge'>Ryan Manchanthasouk</a></div>          </div>
-
-          </div>
-        </div>
-      </div>
       
 
 
