@@ -40,30 +40,14 @@ if($_POST["message"]) {
     <source src="New-York-Sky.mp4" type="video/mp4">
   </video>
     <body>
-      <div class="container">
-        <form action="contact.php">
-            
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-          <form method="post" action="mailto:ryan.manchanthasouk@outlook.com">
-            <input type="submit" value="Send Email">
+        <div class="container">
+          <form class="form-inline" method="POST" action="send.php">
+            <label>Your Email:</label>
+            <input type="text" name="myEmail" class="form-control" />
+            <input type="submit" value="Go" class="btn btn-primary" />
           </form>
-        </form>
-      </div>
+            </form>
+          </div>
       
 
 
