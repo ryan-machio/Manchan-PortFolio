@@ -67,13 +67,14 @@
 
 
 .paragraph {
-  width: 1000px;
+  
+  width: 750px;
   padding: 100px;
   margin: 20px;
   background: rgba(0, 0, 0, .85);
   color: #f1f1f1;
   padding: 20px;
-  font-size: 14pt;
+  font-size: 10pt;
 }
 
 .blog {
@@ -94,4 +95,23 @@
   background: rgba(0, 0, 0, .50);
   color: #f1f1f1;
   padding: 20px;
+}
+
+.contact {
+  text-align: center;
+  font-style: oblique;
+  width: 800px;
+  padding: 100px;
+  margin: 20px;
+  background: rgba(0, 0, 0, .50);
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+.column {
+  width: 20%;
+}
+
+.row {
+  display: flex;
 }

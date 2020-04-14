@@ -1,59 +1,19 @@
 <?php
 
-$errors = ”;
+if (isset($PUSH_['submit'])) {
+	$name = $_POST['fname'];
+	$name = $_POST['lname'];
+	$name = $_POST['country'];
+	$name = $_POST['subject'];
 
-$myemail = ‘yourname@website.com’;//<—–Put Your email address here. if(empty($_POST[‘name’]) ||
+	$mailTo = "ryan.manchanthasouk@outlook.com"
+	$headers = "From: ".$mailFrom;
+	$txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
-empty($_POST[’email’]) ||
 
-empty($_POST[‘message’]))
+	mail($mailTo, $subject, $txt, $headers);
+	header("Loation: index.ph?mailsend")
 
-{
-
-$errors .= “\n Error: all fields are required”;
-
+);
+	]
 }
-
-$name = $_POST[‘name’];
-
-$email_address = $_POST[’email’];
-
-$message = $_POST[‘message’];
-
-if (!preg_match(
-
-“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
-
-{
-
-$errors .= “\n Error: Invalid email address”;
-
-}
-
-if( empty($errors))
-
-{
-
-$to = $myemail;
-
-$email_subject = “Contact form submission: $name”;
-
-$email_body = “You have received a new message. “.
-
-” Here are the details:\n Name: $name \n “.
-
-“Email: $email_address\n Message \n $message”;
-
-$headers = “From: $myemail\n”;
-
-$headers .= “Reply-To: $email_address”;
-
-mail($to,$email_subject,$email_body,$headers);
-
-//redirect to the ‘thank you’ page
-
-header(‘Location: contact-form-thank-you.html’);
-
-}
-
-?>
