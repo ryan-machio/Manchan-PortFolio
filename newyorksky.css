@@ -75,3 +75,23 @@
   padding: 20px;
   font-size: 14pt;
 }
+
+.blog {
+  text-align: center;
+  background: rgba(0, 0, 0, .50);
+  padding: 100px;
+  margin: 20px;
+  color: #f1f1f1;
+  padding: 20px;
+  font-size: 14pt;
+}
+
+.headers {
+  font-style: oblique;
+  width: 800px;
+  padding: 100px;
+  margin: 20px;
+  background: rgba(0, 0, 0, .50);
+  color: #f1f1f1;
+  padding: 20px;
+  font-

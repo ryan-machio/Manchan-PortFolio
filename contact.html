@@ -1,3 +1,8 @@
+<?php
+if($_POST["message"]) {
+    mail("ryan.manchanthasouk@outlook.com", "Form to email message", $_POST["message"], "From: contactme@email.address");
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,10 +27,9 @@
     </div>
     <div class="navbar_links">
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="\index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="https://github.com/ryan-machio">Projects</a></li>
-        <li><a href="#">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -37,7 +41,7 @@
   </video>
     <body>
         <div class="container">
-            <form action="action_page.php">
+            <form action="contact.php">
                 
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -54,9 +58,10 @@
           
               <label for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
+              
+              <form method="post" action="mailto:ryan.manchanthasouk@outlook.com">
+                <input type="submit" value="Send Email">
+              </form>
             </form>
           </div>
       
